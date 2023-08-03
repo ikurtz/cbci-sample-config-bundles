@@ -11,7 +11,7 @@ globalCloudBeesPipelineTemplateCatalog:
         id: "ikurtz-cradlepoint-pov-pipeline-catalog"
         repoOwner: "poc-prep"
         repository: "poc-pipeline-template-catalog"
-        repositoryUrl: "https://github.com/poc-prep/poc-pipeline-template-catalog.git"
+        repositoryUrl: "https://github.com/ikurtz/cbci-sample-config-bundles.git"
         traits:
         - gitHubBranchDiscovery:
             strategyId: 1
