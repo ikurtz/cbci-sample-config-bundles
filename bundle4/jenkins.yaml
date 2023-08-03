@@ -11,7 +11,7 @@ globalCloudBeesPipelineTemplateCatalog:
         id: "3a403cac-c19f-41fe-9433-b30ead9bc91b"
         repoOwner: "poc-prep"
         repository: "poc-pipeline-template-catalog"
-        repositoryUrl: "https://github.com/poc-prep/poc-pipeline-template-catalog.git"
+        repositoryUrl: "https://github.com/ikurtz/cbci-sample-config-bundles.git"
         traits:
         - gitHubBranchDiscovery:
             strategyId: 1
