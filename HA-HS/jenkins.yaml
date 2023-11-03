@@ -50,8 +50,8 @@ kube:
       name: "nodejs"
       yamlMergeStrategy: "override"
     - containers:
-      - args: "9999999"
-        command: "sleep"
+      - args: "/bin/sh -c"
+        command: "cat"
         image: "maven:3.9.4-eclipse-temurin-11"
         livenessProbe:
           failureThreshold: 0
@@ -69,10 +69,6 @@ kube:
 highAvailability:
   highAvailabilityConfiguration:
     developerMode: true
-globalCredentialsConfiguration:
-  configuration:
-    providerFilter: "none"
-    typeFilter: "none"
 unclassified:
   buildDiscarders:
     configuredBuildDiscarders:
@@ -90,10 +86,3 @@ unclassified:
 tool:
   cloudbeesPluginUsageAnalyzer:
     enabled: true
-  git:
-    installations:
-    - home: "git"
-      name: "Default"
-  mavenGlobalConfig:
-    globalSettingsProvider: "standard"
-    settingsProvider: "standard"
